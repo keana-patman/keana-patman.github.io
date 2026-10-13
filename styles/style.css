@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    animation-delay: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/*----------base page structure----------*/
+:root{
+ --bg-color: #1f152c;
+ --dark-gold: #d4ac2b;
+ --light-gold: #e7c34d;
+ --light-text: aliceblue;
+ --bg-accent: #2d1e40;
+ --bg-light: #46325f;
+ --light-silver: #b8bcc0;
+ --dark-blue: #19184d;
+}
+
+
+html{
+    box-sizing: border-box;
+    background-color: var(--bg-color);
+    color:var(--light-text);
+    font-size: 16px;
+    font-family: Nunito;
+}
+
+body{
+    margin: 0;
+}
+
+h2{
+    text-align: center;
+    color:var(--dark-gold);
+    margin: 2rem;
+    margin-top:5rem;
+    font-family: Arvo;
+}
+
+img{
+    height:auto;
+}
+/*--------------class and ids--------------*/
+/******skip-link*************/
+.skip-link{
+    position: absolute;
+    left: -500px;
+    top: 0;
+    font-family: Quicksand, Ephesis;
+    font-size: small;
+    background: var(--bg-accent);
+    color: var(--dark-gold);
+}
+
+.skip-link:focus{
+    left: 1rem;
+    top: 0;
+}
+/********page header**********/
+#page-header{
+    background-color: var(--bg-light);
+    position: sticky;
+    top: 0;
+    padding: 0.5rem;
+    width:60%;
+    float:right;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-style: double;
+    border-right: none;
+    border-color: var(--dark-gold);
+}
+
+.main-nav{
+    list-style-type: none;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    gap: 2rem;
+    
+}
+
+.main-nav a:link{
+    color: var(--light-gold);
+    text-decoration: none;
+    font-family: Quicksand, Ephesis;
+}
+
+.main-nav a:visited{
+    color: var(--light-gold);
+    font-family: Quicksand, Ephesis;
+}
+
+.main-nav a:hover{
+    color:var(--light-silver);
+    text-decoration: underline;
+    font-family: Quicksand, Ephesis;
+    background-color: var(--bg-color);
+    padding:0.5rem;
+    border-radius: 12px;
+}
+
+/********hero section**********/
+#hero{
+    background-image: url("../images/night-hero.jpg");
+    background-size: cover;
+    padding: 8rem;
+}
+
+#cta{
+    background-color: var(--bg-light);
+    text-decoration: none;
+    color:var(--light-text);
+    padding: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-family: Quicksand, Ephesis;
+    border-color: var(--light-silver);
+    border-style: solid;
+    border-radius: 16px;
+}
+
+#name{
+    font-family: Arvo;
+    color:var(--light-text); 
+    font-size: 72px;
+    margin-bottom: 1rem;
+}
+
+#cta:hover{
+    color:var(--light-gold);
+    background-color: var(--dark-blue);
+    border-color: var(--dark-gold);
+    font-family: Quicksand, Ephesis;
+    cursor: pointer;
+}
+
+.display-text{
+    font-family: Quicksand, Ephesis;
+    color:var(--light-text);
+    line-height: 3rem;
+}
+/********about section**********/
+#about-section{
+    display: flex;
+    background-color: var(--bg-accent);
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+#about-text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+
+#about-text p{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-family: Nunito;
+}
+
+#about-section img{
+     width: 200px;
+     height:auto;
+
+     object-fit: cover;
+
+     border-style: solid;
+     border-color: var(--dark-gold);
+}
+
+/*********project cards*********/
+.project-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.project-cards li{
+    flex: 0 0 350px;
+    margin: 20px;
+}
+.project-cards img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 5px 5px 0 0;
+}
+
+.project-cards button{
+    padding: 0;
+    border-style: solid;
+    border-radius: 10px;
+    background-color:var(--bg-light);
+    border-color: var(--bg-accent);
+    color: var(--dark-gold);
+    font-family: Arvo;
+    
+}
+
+.project-cards button:hover{
+    cursor: pointer;
+    background-color: var(--bg-accent);
+    border-color: var(--light-silver);
+    .card-title{
+        color:var(--light-silver);
+    }
+}
+
+/*********skills*********/
+#skills-section{
+    background-color: var(--bg-accent);
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 12px;
+
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.skills-points{ 
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    list-style: none;
+    text-align: center;
+    padding:0;
+    img{
+        max-width: 100px;
+    }
+}
+
+.skills-points p{
+    margin-bottom: 0;
+    font-size: large;
+}
+
+/*********resume*********/
+#resume-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+#pdf-button{
+    background-color: var(--bg-light);
+    text-decoration: none;
+    color:var(--light-text);
+    padding: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-family: Quicksand, Ephesis;
+    border-color: var(--light-silver);
+    border-style: solid;
+    border-radius: 16px;
+}
+
+#pdf-button:hover{
+    background-color: var(--dark-blue);
+    text-decoration: none;
+    color:var(--light-gold);
+    padding: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-family: Quicksand, Ephesis;
+    border-color: var(--dark-gold);
+    border-style: solid;
+    border-radius: 16px;
+}
+
+/*********contact section*********/
+#contact-section{
+    background-color: var(--bg-accent);
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 12px;
+
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.contact-circles{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    img{
+        max-width: 100px;
+        vertical-align: bottom;
+    }
+}
+
+.contact-circles li{
+    background-color: var(--bg-light);
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.contact-circles li:hover{
+    background-color: var(--light-gold);
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+/********modal cards*********/
+dialog{
+    border-color: var(--dark-gold);
+    border-radius: 12px;
+    background-color: var(--dark-blue);
+    color: var(--light-silver);
+    font-family: Nunito;
+    max-width: 50%;
+}
+
+a:link{
+    color:var(--dark-gold)
+}
+
+a:hover{
+    color:#dc59c4;
+}
+
+#modal-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+#close-button{
+    text-align: center;
+    margin:10px;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+
+    border:none;
+    background-color: var(--bg-light);
+    color:var(--dark-gold);
+    border-radius: 5px;
+}
+
+#close-button:hover{
+    cursor: pointer;
+    background-color: var(--dark-gold);
+    color:var(--bg-light);
+}

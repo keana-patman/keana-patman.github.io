@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./scripts/script.js" defer></script>
+    <title>Keana Patman Portfolio</title>
+  </head>
+
+  <body>
+    <a href="#hero" class="skip-link">Skip to Main Content</a>
+    <!-------Page Header and Nav------->
+    <header id="page-header">
+        <nav aria-label="Primary Navigation">
+            <ul class="main-nav">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-------Hero Section------->
+    <main>
+        <section id="hero">
+            <h1 id="name">Hey, I'm Keana Patman</h1> 
+            <p class="display-text">~Making the World a Little Sillier, One Step at a Time~</p>
+            <a href="#projects" id="cta">View Projects</a>
+        </section>
+        <!-------About Section------->
+        <h2 id="about">-About Me-</h2>
+        <section id="about-section">
+            <img src="./images/keana-header.webp" alt="Headshot of Keana P.">
+            <div id="about-text">
+                <p>Hello, my name is Keana Patman. I currently live in Missoula, MT. Motivated and enthusiastic Computer Science student with a strong work ethic 
+                    and problem-solving skills gained through years of independent work and projects. 
+                    Ready to become a reliable and fast learner to contribute to all duties 
+                    and responsibilities in an effective and dependable manner.</p>
+                <p>I love playing video games, coding, traveling, model kits, playing the trumpet, and analyzing media. 
+                    I am a very academically inclined person, and spend a lot of time working on school related projects.</p>
+                <p>I am currently a Junior at the University of Montana and am majoring in Computer Science - Software Engineering with a minor in Media Arts. </p>
+            </div>
+        </section>
+        <!-------Projects------->
+        <h2 id="projects">-Projects-</h2>
+        <section id="project-section">  
+            <ul class="project-cards">
+                <!--card 1-->
+                <li>
+                <article>
+                    <button type="button" class="project-card" data-index="0">
+                    <img src="./images/rubiks-cube.webp" alt="Picture of Rotated Rubik's Cube">
+                    <h3 class="card-title">2D Rubik's Cube</h3>
+                    </button>
+                </article>
+                </li>
+                <!--card 2-->
+                <li>
+                <article>
+                    <button type="button" class="project-card" data-index="1">
+                    <img src="./images/go-board.webp" alt="Terminal Output of Text Go Board">
+                    <h3 class="card-title">Go Board</h3>
+                    </button>
+                </article>
+                </li>
+                <!--card 3-->
+                <li>
+                <article>
+                    <button type="button" class="project-card" data-index="2">
+                    <img src="./images/living-world.webp" alt="Image of Running Living World Simulation">
+                    <h3 class="card-title">Living World Simulation</h3>
+                    </button>
+                </article>
+                </li>
+                <!--card 4-->
+                <li>
+                <article>
+                    <button type="button" class="project-card" data-index="3">
+                    <img src="./images/website.webp" alt="Image of Emulated Applebee's Website">
+                    <h3 class="card-title">Website Emulation</h3>
+                    </button>
+                </article>
+                </li>
+            </ul>
+        </section>
+        <!-------Skills------->
+        <h2 id="skills">-Skills-</h2>
+        <section id="skills-section">
+            <ul class="skills-points">
+                <li>
+                    <img src="./images/java.webp" alt="Java Logo">
+                    <p>Java</p>
+                </li>
+                <li>
+                    <img src="./images/python.webp" alt="Python Logo">
+                    <p>Python</p>
+                </li>
+                <li>
+                    <img src="./images/html-logo.webp" alt="HTML Logo">    
+                    <p>HTML</p>
+                </li>
+                <!--can add more-->
+            </ul>
+        </section>
+        <!-------Resume------->
+        <h2 id="resume">-Resume-</h2>
+        <section id="resume-section">
+            <p>Downloadable Resume ->  </p>
+            <a href="./Keana Patman Resume.pdf" target="_blank" rel="noopener noreferrer" id="pdf-button">
+                Open PDF in New Tab</a>
+        </section>
+        <!-------Contact------->
+        <h2 id="contact">-Contact Me-</h2>
+        <section id="contact-section">
+            <ul class="contact-circles">
+                <li>
+                    <a href="mailto:missk913@gmail.com">
+                        <img src="./images/email.webp" alt="Email Logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/keana-patman">
+                        <img src="./images/github.webp" alt="GitHub Logo">
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!--Modal Box-->
+        <dialog id="project-modal" tabindex="-1"> 
+          <div id="modal-header">
+            <h3 id="modal-title">Project Placeholder</h3>
+            <button type="button" id="close-button">X</button>
+          </div>
+          <p id="modal-text">ooh ooh dialogue here is a really long line of text </p>
+          <a href="https://theuselessweb.com/" id="modal-link">click me!</a>
+        </dialog>
+    </main>
+  </body>
+</html>
