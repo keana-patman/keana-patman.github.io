@@ -1,6 +1,6 @@
 //---------variables-----------
 const projects = [
-    {title: "Company Webiste", details: "Languages: HTML <br> This project is a practice on learning the Django framework through creating a simple company website that includes a\
+    {title: "Company Webiste", details: "Languages: Python, HTML <br> This project is a practice on learning the Django framework through creating a simple company website that includes a\
         home page, about page, and a products page. Uses templates to achieve this. <br> Built with the Django Frameowrk.", linkText: "View Code on GitHub", href: "https://github.com/keana-patman/company_website"},
     // {title: "Go Board", details: "Languages: Java <br> This project is an implementation of a Go board. It is fully playable with placing pieces, capturing territory and calculating a score. Players\
     //     can place thier piece by typing in coordinates in the terminal. Rules like no suicides are also in effect. <br> Built with 2D arrays and recursion.", linkText: "View Code in GitHub", href: "https://github.com/keana-patman/CS-152/tree/main/go-board"},
