@@ -352,6 +352,10 @@ a:link{
     color:var(--dark-gold)
 }
 
+a:visited{
+    color:cornflowerblue;
+}
+
 a:hover{
     color:#dc59c4;
 }
