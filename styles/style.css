@@ -259,6 +259,23 @@ img{
     padding-bottom: 8rem;
 }
 
+#experience-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#experience-section ul li{
+    list-style-type: none;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.experience-title{
+    font-style:oblique;
+}
+
 #pdf-button{
     background-color: var(--bg-light);
     text-decoration: none;
