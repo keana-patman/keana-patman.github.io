@@ -201,7 +201,8 @@ img{
 }
 
 .project-cards button{
-    padding: 0;
+    padding: 30;
+    min-width: 200px;
     border-style: solid;
     border-radius: 10px;
     background-color:var(--bg-light);
